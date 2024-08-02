@@ -1,0 +1,56 @@
+<html>
+   <head>
+    <title>Encomenda de açai</title>
+   </head>
+
+   <body>
+    <h1>Bem-Vindo a sorveteria Açaizinho do pinhal</h1>
+    <img src="acai-foto.png" alt="foto de um açai" width="800">
+    <h1>Monte o seu açai do seu jeito</h1>
+
+    <form method = "post" action="teste.jsp">
+        <p> Seus dados para a entrega: </p>
+        Nome: <input type = "text" name = "Nome"> <br>
+        Endereço: <input type="text" name = "rua"> <br>
+        <input type = "radio" name = "local" value = "Casa"> Casa
+        <input type = "radio" name = "local" value = "Apartamento"> Apartamento <br>
+        Email: <input type="email" name = email> <br>
+        Data de entrega: <input type = "date" name = "dataDaEntrega">
+
+        <p> Escolha suas preferencias:</p>
+        Tamanho: 
+        <input type="radio" name="Tamanho" value = "g"> Grande 1L
+        <input type="radio" name="Tamanho" value = "m"> Medio 500ml
+        <input type="radio" name="Tamanho" value = "p"> Pequeno 300ml
+        <br>
+
+        Tipo do açai:
+        <select name = "sabor">
+            <option>Guaraná</option>
+            <option>Avelã</option>
+            <option>Morango</option>
+            <option>Banana</option>
+        </select>
+        <br>
+
+        <br>
+        Complementos (Selecione 3): <br>
+        <input type = "checkbox" name="leite condensado" value = "sim" > Leite condensado
+        <input type = "checkbox" name="chocolate" value = "sim" > Chocolate
+        <input type = "checkbox" name="ninho" value = "sim" > Leite em pó
+        <input type = "checkbox" name="paçoca" value = "sim" > Paçoca
+        <input type = "checkbox" name="MMs" value = "sim" > MMs
+        <input type = "checkbox" name="Amendoim" value = "sim" > Amendoim
+        <input type = "checkbox" name="caramelo" value = "sim" > Caramelo
+        <input type = "checkbox" name="sorvete" value = "sim" > Sorvete de creme
+        <input type = "checkbox" name="Banana" value = "sim" > Banana
+        <input type = "checkbox" name="morango" value = "sim" > Morango
+        <input type = "checkbox" name="abacaxi" value = "sim" > Abacaxi
+        <br> <br>
+
+        <textarea name = "mensagem" rows="10" cols="30"> Escreva uma mensagem se necessario</textarea>
+
+        <input type = "submit" >
+    </form>
+   </body>
+</html>
